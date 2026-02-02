@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tilt Neon', cursive;
+}
+
+
+nav {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  border: solid 1px rgb(0, 0, 0);
+  position: relative;
+  color: white;
+  height: fit-content;
+  z-index: 40;
+  text-align: right;
+
+}
+
+nav img {
+  display: inline-block;
+}
+
+.welcome {
+  font-size: x-large;
+  font-weight: lighter;
+  font-style: initial;
+  margin-top: 5px;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+nav a {
+  color: #fff;
+}
+
+.menu {
+  margin: 0 1rem;
+  color: white;
+  transition: 0.3s;
+  font-size: 18px;
+  vertical-align: bottom;
+
+}
+
+.menu div {
+  display: inline;
+  font-size: large;
+  padding: 10px 10px;
+  word-spacing: 2px;
+  margin-top: 15px;
+
+}
+
+.menu1 div {
+  display: inline-block;
+  word-spacing: 2px;
+  padding: 10px 10px;
+  font-size: large;
+}
+
+.menu div:hover {
+  color: #ffbd59;
+  cursor: pointer;
+}
+
+.menu1 div:hover {
+  color: #ffbd59;
+  cursor: pointer;
+}
+
+.logo {
+
+  display: block;
+
+  float: left;
+  position: relative;
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-family: 'Tilt Prism', cursive;
+}
+
+
+
+.modal-backdrop {
+  z-index: 100000 !important;
+}
+
+.modal {
+  z-index: 100001 !important;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.4);
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  filter: brightness(0.6);
+  z-index: -1;
+}
+
+#main-view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+
+
+.modern-text:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo2 {
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  animation: zoom-in 1s linear;
+  position: relative;
+  animation: pulse 2s ease-in-out infinite;
+
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.modern-text {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+
+}
+
+@keyframes shimmer {
+  from {
+    color: #c2ac08;
+    text-shadow: 0 0 10px rgb(0, 74, 173), 0 0 20px rgb(0, 74, 173), 0 0 30px rgb(0, 74, 173), 0 0 40px rgb(0, 74, 173)
+  }
+
+  to {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #000000, 0 0 20px #000000
+  }
+}
+
+
+
+
+img.img-thumbnail {
+  height: 830px;
+  width: 650px;
+  margin-top: 35px;
+}
+
+
+body {
+
+  background: #000;
+}
+
+.box {
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Tilt+Prism&display=swap');
+
+.box p {
+  font-size: 140px;
+  color: #d6af00;
+  text-shadow: 0 0 0 transparent,
+    0 0 10px #d6af00,
+    0 0 20px #d6af00,
+    0 0 40px #d6af00,
+    0 0 100px #d6af00,
+    0 0 200px #d6af00,
+    0 0 300px #d6af00,
+    0 0 500px #00237a97,
+    0 0 1000px #00237a51;
+  animation: animate 2s infinite alternate, fade-in 2s ease-in;
+
+}
+
+.box p span {
+  animation: flicker 1.5s ease-in infinite;
+}
+
+.box p span:nth-child(1) {
+  animation-delay: 0.3s;
+  font-family: 'Tilt Prism', cursive;
+}
+
+.box p span:nth-child(2) {
+  animation-delay: 0.7s;
+  font-family: 'Tilt Prism', cursive;
+}
+
+.box p span:nth-child(3) {
+  animation-delay: 1.8s;
+  font-family: 'Tilt Prism', cursive;
+}
+
+.box p span:nth-child(4) {
+  animation-delay: 1.2s;
+  font-family: 'Tilt Prism', cursive;
+}
+
+.box p span:nth-child(5) {
+  animation-delay: 0.6s;
+  font-family: 'Tilt Prism', cursive;
+}
+
+.box p span:nth-child(6) {
+  animation-delay: 0.2s;
+  font-family: 'Tilt Prism', cursive;
+}
+
+.box p span:nth-child(7) {
+  animation-delay: 0.9s;
+  font-family: 'Tilt Prism', cursive;
+}
+
+.box p span:nth-child(8) {
+  animation-delay: 1.5s;
+  font-family: 'Tilt Prism', cursive;
+}
+
+.box p span:nth-child(9) {
+  animation-delay: 2s;
+  font-family: 'Tilt Prism', cursive;
+}
+
+.box p span:nth-child(10) {
+  animation-delay: 1.4s;
+  font-family: 'Tilt Prism', cursive;
+}
+
+.box p span:nth-child(11) {
+  animation-delay: 1s;
+  font-family: 'Tilt Prism', cursive;
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes animate {
+  40% {
+    opacity: 1;
+  }
+
+  42% {
+    opacity: 0.8;
+  }
+
+  43% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 0.3;
+  }
+
+  46% {
+    opacity: 1;
+  }
+}
+
+.bottomtext {
+  color: #0048ff;
+  text-shadow: 0 0 0 transparent,
+    0 0 10px #0048ff,
+    0 0 20px #0048ffd2,
+    0 0 40px #0048ff9d,
+    0 0 100px #0048ff64;
+  animation: animate 3s infinite alternate;
+
+}
+
+
+html {
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+
+}

@@ -1,0 +1,269 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+
+}
+
+.menu {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+
+}
+
+.welcome {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+.custom-modal {
+      text-shadow: 0 0 0 transparent,
+          0 0 10px #ffffff,
+          0 0 20px #ffffffd2,
+          0 0 40px #ffffff9d,
+          0 0 100px #ffffff64;
+}
+.custom-modal .modal-content {
+  background-color: #1c1c1c3f;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.custom-modal .modal-header {
+  border-bottom: none;
+}
+
+.custom-modal .form-label {
+  color: #ffffff;
+}
+
+.custom-modal .form-control {
+  background-color: #47474739;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.custom-modal .form-control:focus {
+  background-color: #6c757d55;
+  border-color: #6c757d;
+  box-shadow: none;
+  color: #fff;
+}
+
+
+.custom-modal .btn-secondary {
+  background-color: #bb96002b;
+  border-color: #000000;
+  color: #fff;
+}
+
+.custom-modal .btn-secondary:hover {
+  background-color: #002c4d6b;
+  border-color: #5a626800;
+  color: #fff;
+
+}
+
+
+.bogo p span {
+  font-family: 'Tilt Prism', cursive;
+    text-shadow: 0 0 0 transparent,
+        0 0 10px #ffffff,
+        0 0 20px #ffffffd2,
+        0 0 40px #ffffff9d,
+        0 0 100px #ffffff64;
+      animation: animate 3s infinite alternate;
+}
+
+.bogo p {
+
+  animation: animate 4s infinite alternate, fade-in 0.1s ease-in;
+
+
+}
+
+.bogo p span {
+  animation: flicker 2.3s infinite;
+
+}
+
+.bogo:hover p span:nth-child(1) {
+  animation-delay: 0.3s;
+  font-family: 'Tilt Prism', cursive;
+  color: #0048ff;
+  text-shadow: 0 0 0 transparent,
+    0 0 10px #0048ff,
+    0 0 20px #0048ffb6,
+    0 0 40px #0048ff6e,
+    0 0 100px #0048ff39;
+
+}
+
+.bogo:hover p span:nth-child(2) {
+  animation-delay: 0.7s;
+  font-family: 'Tilt Prism', cursive;
+  color: #0048ff;
+  text-shadow: 0 0 0 transparent,
+    0 0 10px #0048ff,
+    0 0 20px #0048ffb6,
+    0 0 40px #0048ff6e,
+    0 0 100px #0048ff39;
+
+}
+
+.bogo:hover p span:nth-child(3) {
+  animation-delay: 1.8s;
+  font-family: 'Tilt Prism', cursive;
+  color: #0048ff;
+  text-shadow: 0 0 0 transparent,
+    0 0 10px #0048ff,
+    0 0 20px #0048ffb6,
+    0 0 40px #0048ff6e,
+    0 0 100px #0048ff39;
+
+}
+
+.bogo:hover p span:nth-child(4) {
+  animation-delay: 1.2s;
+  font-family: 'Tilt Prism', cursive;
+  color: #0048ff;
+  text-shadow: 0 0 0 transparent,
+    0 0 10px #0048ff,
+    0 0 20px #0048ffb6,
+    0 0 40px #0048ff6e,
+    0 0 100px #0048ff39;
+
+}
+
+.bogo:hover p span:nth-child(5) {
+  animation-delay: 0.6s;
+  font-family: 'Tilt Prism', cursive;
+  color: #0048ff;
+  text-shadow: 0 0 0 transparent,
+    0 0 10px #0048ff,
+    0 0 20px #0048ffb6,
+    0 0 40px #0048ff6e,
+    0 0 100px #0048ff39;
+
+}
+
+.bogo:hover p span:nth-child(6) {
+  animation-delay: 0.2s;
+  font-family: 'Tilt Prism', cursive;
+  color: #d6af00;
+  text-shadow: 0 0 0 transparent,
+    0 0 10px #d6af00,
+    0 0 20px #d6af00bd,
+    0 0 40px #d6af0079,
+    0 0 100px #d6af0038,
+}
+
+.bogo:hover p span:nth-child(7) {
+  animation-delay: 0.9s;
+  font-family: 'Tilt Prism', cursive;
+  color: #d6af00;
+  text-shadow: 0 0 0 transparent,
+    0 0 10px #d6af00,
+    0 0 20px #d6af00bd,
+    0 0 40px #d6af0079,
+    0 0 100px #d6af0038,
+}
+
+.bogo:hover p span:nth-child(8) {
+  animation-delay: 1.5s;
+  font-family: 'Tilt Prism', cursive;
+  color: #d6af00;
+  text-shadow: 0 0 0 transparent,
+    0 0 10px #d6af00,
+    0 0 20px #d6af00bd,
+    0 0 40px #d6af0079,
+    0 0 100px #d6af0038,
+}
+
+.bogo:hover p span:nth-child(9) {
+  animation-delay: 2s;
+  font-family: 'Tilt Prism', cursive;
+  color: #d6af00;
+  text-shadow: 0 0 0 transparent,
+    0 0 10px #d6af00,
+    0 0 20px #d6af00bd,
+    0 0 40px #d6af0079,
+    0 0 100px #d6af0038,
+}
+
+.bogo:hover p span:nth-child(10) {
+  animation-delay: 1.4s;
+  font-family: 'Tilt Prism', cursive;
+  color: #d6af00;
+  text-shadow: 0 0 0 transparent,
+    0 0 10px #d6af00,
+    0 0 20px #d6af00bd,
+    0 0 40px #d6af0079,
+    0 0 100px #d6af0038,
+}
+
+.bogo:hover p span:nth-child(11) {
+  animation-delay: 1s;
+  font-family: 'Tilt Prism', cursive;
+  color: #d6af00;
+  text-shadow: 0 0 0 transparent,
+    0 0 10px #d6af00,
+    0 0 20px #d6af00bd,
+    0 0 40px #d6af0079,
+    0 0 100px #d6af0038,
+}
+
+
+
+
+
+.bottomtext3 {
+  color: #ffffff;
+  text-shadow: 0 0 0 transparent,
+    0 0 10px #ffffff,
+    0 0 20px #ffffffd2,
+    0 0 40px #ffffff38;
+
+  font-family: 'Tilt Neon', cursive;
+}
+.bottomtext4 {
+  color: #0048ff;
+  text-shadow: 0 0 0 transparent,
+    0 0 10px #0048ff,
+    0 0 20px #0048ffd2,
+    0 0 40px #0048ff9d,
+    0 0 100px #0048ff64;
+      animation: animate 2s infinite alternate;
+  font-family: 'Tilt Neon', cursive;
+}
+@keyframes animate {
+  40% {
+    opacity: 1;
+  }
+
+  42% {
+    opacity: 0.8;
+  }
+
+  43% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 0.3;
+  }
+
+  46% {
+    opacity: 1;
+  }
+}

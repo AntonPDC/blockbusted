@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Blockbusted{% endblock %}
+{% block body %}
+<nav>
+  <div class="logo">Blockbusted</div>
+  <div class="menu">
+    <div><a href="/admin/" class="modern-text">Admin</a></div>
+    <div><a href="/api/movies/popular/" class="modern-text">Popular (JSON)</a></div>
+    <div><a href="/api/movies/search/?title=matrix" class="modern-text">Search (JSON)</a></div>
+  </div>
+  <div class="welcome modern-text">Welcome</div>
+</nav>
+
+<div class="box">
+  <div>
+    <p class="modern-text">
+      <span>B</span><span>L</span><span>O</span><span>C</span><span>K</span><span>B</span><span>U</span><span>S</span><span>T</span><span>E</span><span>D</span>
+    </p>
+    <div class="bottomtext">Django API is running. Frontend can poll /api endpoints.</div>
+  </div>
+</div>
+{% endblock %}

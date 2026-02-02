@@ -1,0 +1,124 @@
+.profile-card {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  margin-top: 260px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  border-radius: 30px;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+.profile-card img {
+  width: 320px;
+  ;
+  height: 450px;
+  ;
+
+  transform: scale(1.1, 1.1) translateX(0);
+  transition: all 0.50s ease 0s;
+}
+
+.profile-card:hover img {
+  transform: scale(1.1, 1.1) translateX(15px);
+}
+
+.profile-card .profile-content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  color: #ffffff;
+  padding: 20px;
+  text-align: right;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(0.9, 0.9) translateY(100%);
+  transition: all 0.40s linear 0s;
+
+}
+
+.profile-card:hover .profile-content {
+  transform: scale(0.9, 0.9) translateY(0);
+}
+
+.profile-card .profile-content h3 {
+  margin: 0 0 10px;
+  font-size: 34px;
+    text-shadow: 0 0 0 transparent,
+        0 0 10px #ffffff,
+        0 0 20px #ffffffd2,
+        0 0 40px #ffffff9d,
+        0 0 100px #ffffff64;
+      animation: animate 4s infinite alternate;
+}
+
+.profile-card .profile-content p {
+  margin: 0 0 10px;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.profile-card .profile-content ul {
+  margin: 0 0 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-card .profile-content ul li {
+  display: inline-block;
+  margin: 0 7px;
+}
+
+.profile-card .profile-content ul li a {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  transition: all 0.50s linear 0s;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+.profile-card .profile-content ul li a:hover {
+  text-decoration: none;
+  color: #808080;
+}
+
+.card-1 {
+  animation-delay: 1s;
+}
+
+.card-2 {
+  animation-delay: 1.5s;
+}
+
+.card-3 {
+  animation-delay: 2s;
+}
+
+.card-4 {
+  animation-delay: 2.5s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.title1 {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.main2 {
+  animation: fadeIn 15s ease forwards;
+  z-index: -1;
+}
