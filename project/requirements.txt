@@ -1,0 +1,21 @@
+# Core Django / API stack
+Django==5.2.10
+djangorestframework==3.16.1
+djangorestframework-simplejwt==5.5.1
+
+# Production basics
+gunicorn==23.0.0
+whitenoise==6.10.0
+django-environ==0.12.0
+django-cors-headers==4.7.0
+
+# Database driver (Postgres)
+psycopg[binary]==3.2.9
+
+# Realtime (WebSockets) via Django Channels + Redis
+channels==4.2.0
+channels-redis==4.2.0
+daphne==4.2.0
+
+# External HTTP calls (RapidAPI)
+requests==2.32.3
