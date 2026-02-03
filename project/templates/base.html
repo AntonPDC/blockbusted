@@ -1,0 +1,28 @@
+{% load static %}
+{#
+  Base template that wires your CSS into every page.
+
+  The CSS files are located in:
+    static/css/
+
+  Django finds them via STATICFILES finders, and WhiteNoise serves them in production
+  after `collectstatic` runs on Render.
+#}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}Blockbusted{% endblock %}</title>
+
+    <!-- Your provided CSS files -->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/movies_layout.css' %}">
+    <link rel="stylesheet" href="{% static 'css/profiles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/App.css' %}">
+  </head>
+  <body>
+    {% block body %}{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,73 @@
+/* movies_layout.css
+   Poster LEFT, details RIGHT movie layout.
+   Uses bb-* classes so it won't collide with your existing CSS names.
+*/
+
+.bb-movies {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 12px 0;
+}
+
+.bb-movie-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.bb-movie-poster {
+  width: 130px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
+
+.bb-movie-details {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.bb-movie-title {
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.bb-movie-meta {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 10px;
+  row-gap: 6px;
+}
+
+.bb-movie-meta .bb-label {
+  opacity: 0.85;
+  font-weight: 600;
+}
+
+.bb-movie-meta .bb-value {
+  opacity: 0.95;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bb-movie-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.bb-muted {
+  opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+  .bb-movie-poster { width: 100px; border-radius: 10px; }
+  .bb-movie-row { gap: 12px; padding: 10px; }
+}

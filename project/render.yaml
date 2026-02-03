@@ -1,0 +1,40 @@
+# Render blueprint
+# - Builds a Python web service
+# - Runs collectstatic at build time
+# - Runs migrations before deploying the new version
+# - Starts gunicorn (WSGI) for HTTP
+
+services:
+  - type: web
+    name: blockbusted
+    env: python
+    plan: free
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
+    preDeployCommand: |
+      python manage.py migrate
+    startCommand: |
+      gunicorn blockbusted.wsgi:application --log-file -
+    envVars:
+      # Render can generate a value for you (recommended).
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+
+      # Production hardening: turn off DEBUG
+      - key: DJANGO_DEBUG
+        value: "0"
+
+      # Render injects the external hostname; Django needs it in ALLOWED_HOSTS
+      - key: DJANGO_ALLOWED_HOSTS
+        value: "${RENDER_EXTERNAL_HOSTNAME}"
+
+      # Wire Django to the Render Postgres database
+      - key: DATABASE_URL
+        fromDatabase:
+          name: blockbusted-db
+          property: connectionString
+
+databases:
+  - name: blockbusted-db
+    plan: free
